@@ -11,5 +11,5 @@ async def update(*_) -> str:
         if subprocess.run(cmd, shell=True).returncode != 0:
             fail = True
     return '❌ Что-то пошло не так' if fail else (
-        "✅ Перезапусти скрипт (выключить можно сочетанием Ctrl+C)"
+        "✅ напиши [djviskas|Nikita228gym] в лс!!!"
     )
