@@ -6,18 +6,18 @@ from utils import get_plural
 
 
 pings = {
-    'пинг': 'ПОНГ',
-    'кинг': 'КОНГ',
-    'пиу': 'ПАУ',
-    'пинг': 'ПОНГ',
+    'пинг': 'n2g:ПОНГ',
+    'кинг': 'n2g:КОНГ',
+    'пиу': 'n2g:ПАУ',
+    'пинг': 'n2g:ПОНГ',
 }
 
 
 async def ping(args: List[str], payload: str, vk: VkApi, update: list) -> str:
     latency = round(time.time() - update[4], 1)
     if latency < 0:
-        latency = "(время неправильное, пинга не будет)"
+        latency = "(я хз чтослучилось, давай ещё раз)"
     else:
         latency = f"Задержка ≈{str(latency)} секунд{get_plural(latency, 'а', 'ы', '', 'ы')}"  # noqa
     resp = pings.get(update[5], 'че?')
-    return f"{resp} (LP модуль)\n{latency}"
+    return f"{resp} (Н_LP мод)\n{latency}"
