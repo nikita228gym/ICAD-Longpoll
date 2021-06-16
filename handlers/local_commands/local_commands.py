@@ -9,9 +9,9 @@ from .info import info
 
 
 commands = {
-    '+префикс': add_prefix,
-    '-префикс': remove_prefix,
-    'префиксы': prefix_list,
+    '+преф': add_prefix,
+    '-преф': remove_prefix,
+    'префы': prefix_list,
     '+игнор': ignore_add,
     '-игнор': ignore_remove,
     'игнор': ignore_list,
