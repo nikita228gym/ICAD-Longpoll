@@ -15,7 +15,7 @@ except FileNotFoundError:
             "[username]\n# Сюда нужно вставить имя пользователя на pythonanywhere\n\n"  # noqa
             "[host]\n# Если не указано поле \"username\", сюда нужно вставить ссылку на callback модуль\n\n"  # noqa
             "# Поля ниже заполнять не нужно\n[access_key]\n[self_id]\n"
-            "[local_prefixes]\n/s\n!лп\n.лп"
+            "[local_prefixes]\n/s\n!н\nн"
         )
         print('Создан конфигурационный файл config.ini, необходимо заполнить')
         sys.exit()
