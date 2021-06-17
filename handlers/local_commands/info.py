@@ -14,3 +14,4 @@ async def info(*_) -> str:
     if out[0] == VERSION:
         update_info = ''
     return f"{update_info}LP модуль ver. {VERSION}\nБольше инфы в следующих сериях"  # noqa
+#sss
